@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "ligand_experiment.v0",
+  "title": "Eksperiment s ligandom (NACRT – polja dogovoriti s IRB-om)",
+  "type": "object",
+  "required": ["ligand", "metal_ion", "source"],
+  "properties": {
+    "ligand":       { "$ref": "#/$defs/value", "description": "Naziv ili oznaka liganda" },
+    "metal_ion":    { "$ref": "#/$defs/value", "description": "Ion koji se izdvaja, npr. Am(III)" },
+    "diluent":      { "$ref": "#/$defs/value", "description": "Organska faza / razrjeđivač" },
+    "aqueous_phase":{ "$ref": "#/$defs/value", "description": "Kiselina i koncentracija, npr. HNO3 3 mol/L" },
+    "temperature_K":{ "$ref": "#/$defs/value", "description": "Temperatura pokusa u K" },
+    "D":            { "$ref": "#/$defs/value", "description": "Koeficijent raspodjele" },
+    "SF":           { "$ref": "#/$defs/value", "description": "Faktor separacije" },
+    "source": {
+      "type": "object",
+      "required": ["doi"],
+      "properties": {
+        "doi":  { "type": "string" },
+        "page": { "type": "integer" }
+      }
+    }
+  },
+  "$defs": {
+    "value": {
+      "type": "object",
+      "required": ["value", "quote"],
+      "properties": {
+        "value": { "type": ["string", "number", "null"] },
+        "unit":  { "type": ["string", "null"] },
+        "quote": { "type": "string", "description": "Doslovan citat iz rada na kojem se vrijednost temelji" }
+      }
+    }
+  }
+}
