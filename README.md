@@ -8,14 +8,14 @@ Uz to se uspoređuje nekoliko različitih LLM-ova na istom zadatku.
 
 ## Tim
 
-| Član | Zaduženje |
-|------|-----------|
-| Elide Babić | |
-| Pavao Knez | |
-| Ena Špoler | |
-| Erik Mikšič| |
+| Član        | Zaduženje |
+| ----------- | --------- |
+| Elide Babić |           |
+| Pavao Knez  |           |
+| Ena Špoler  |           |
+| Erik Mikšič |           |
 
-Mentor: 
+Mentor: prof. dr. sc. Mihaela Vranić
 
 ## Struktura repozitorija
 
