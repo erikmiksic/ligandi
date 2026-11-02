@@ -6,6 +6,7 @@
 # PDF-ovi radova (dijele se preko zajedničke mape, ne preko gita)
 data/papers/*
 !data/papers/README.md
+drive-download*/
 
 # Python
 __pycache__/
