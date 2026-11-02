@@ -1,0 +1,27 @@
+# Tajni ključevi
+.env
+.env.*
+!.env.example
+
+# PDF-ovi radova (dijele se preko zajedničke mape, ne preko gita)
+data/papers/*
+!data/papers/README.md
+drive-download*/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+*.db
+
+# Node / frontend
+node_modules/
+frontend/dist/
+
+# Sustav i editori
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
