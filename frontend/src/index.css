@@ -1,0 +1,8 @@
+/*
+ * Base look of the whole app: colors, fonts and buttons.
+ * Styles for individual parts live in the *.module.css files next to their components.
+ */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
